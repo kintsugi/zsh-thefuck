@@ -29,7 +29,7 @@ zstyle -s ':prezto:runcom' zpreztorc \
   'PREZTO_RUNCOM_ZPREZTORC' || PREZTO_RUNCOM_ZPREZTORC="${SDOTDIR:-$HOME/.zpreztorc}"
 
 # Register alias
-init_args=(--alias "$THEFUCK_ALIAS")
+init_args=(--alias "$THEFUCK_ALIAS" --enable-experimental-instant-mode)
 
 cache_file="${TMPDIR:-/tmp}/thefuck-cache.$UID.zsh"
 if [[ "${commands[thefuck]}" -nt "$cache_file" \
